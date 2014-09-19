@@ -1,0 +1,31 @@
+.page{
+	float:left;
+}
+
+.slider{
+	width:200000px;
+}
+
+.kkbox{
+	overflow:hidden;
+}
+.clear{
+	clear:both;
+}
+.control .pre{
+	float:left;
+}
+.control .next{
+	float:right;
+}
+.control img{
+	cursor:pointer;
+}
+
+.control{
+	position: absolute;
+}
+
+body{
+    margin:0;
+}

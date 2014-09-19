@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>kkslider</title>
+		<link href="kkslider.css" type="text/css" rel="stylesheet" />
+		<script src = "jquery-1.11.1.min.js"></script>
+		<script src = "kkslider.js"></script>
+        <style>
+            /* custom style*/
+            .kkbox{
+                margin:100px auto;
+            }
+        </style>
+    </head>
+    <body>
+    	<div class = "kkbox">
+    		<div class="slider">
+    			<div class = "page">
+    				<img src="imgs/x.jpg">
+    			</div>
+    			<div class = "page">
+    				<img src="imgs/y.jpg">
+    			</div>
+    			<div class = "page">
+    				<img src="imgs/z.jpg">
+    			</div>
+    			<div class = "clear"></div>
+    		</div>
+    		<div class = "control">
+    			<img src = "imgs/bn-pre.png" class = "pre">
+    			<img src = "imgs/bn-next.png" class = "next">
+    			<div class = "clear"></div>
+    		</div>
+    	</div>
+        <script>
+            $(function(){
+                loadSlider( 1000, 500);  //w,h
+            })
+        </script>
+    </body>
+</html>
