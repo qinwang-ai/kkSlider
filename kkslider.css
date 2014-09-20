@@ -12,17 +12,8 @@
 .clear{
 	clear:both;
 }
-.control .pre{
-	float:left;
-}
-.control .next{
-	float:right;
-}
-.control img{
+.control-pre, .control-next{
 	cursor:pointer;
-}
-
-.control{
 	position: absolute;
 }
 

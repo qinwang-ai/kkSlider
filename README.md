@@ -9,6 +9,23 @@ How to Use this Plugin:<br>
 
 	2 put the width and height params in the function loadSlider( w, h)
 	(Hint:you can watch an example to open the index.html)
+	3 you can copy <pre>
+	<div class = "kkbox">
+		<div class="slider">
+			<div class = "page">
+				<img src="imgs/x.jpg">
+			</div>
+			<div class = "page">
+				<img src="imgs/y.jpg">
+			</div>
+			<div class = "page">
+				<img src="imgs/z.jpg">
+			</div>
+			<div class = "clear"></div>
+		</div>
+	</div>
+	</pre>
+	to your code,then modify it
 
 
 

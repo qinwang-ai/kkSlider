@@ -1,19 +1,40 @@
+function loadkkcontrol(){
+	var div = $('<div>');
+	var img = $('<img>');
+	div.addClass('control-pre');
+	img.attr( 'src','imgs/bn-pre.png');
+	img.addClass( 'pre');
+	div.html(img);
+	$(".kkbox").append(div);
+
+	var div = $('<div>');
+	var img = $('<img>');
+	img.addClass( 'next');
+	div.addClass('control-next');
+	img.attr( 'src','imgs/bn-next.png');
+	div.html(img);
+	$(".kkbox").append(div);
+}
+
 function loadSlider( w, h){
 //			var w = $( window).width();
 //			var h = $( window).height();
 	$(".kkbox").css( "width", w);
 	$(".control").css( "width",w);
-
+	loadkkcontrol();
 	$(window).load(function(){
-		var tmp_h = $(" .control").height();
-		$(".control").css( "margin-top",  h*( -0.5) - tmp_h*0.5 );
+		var tmp_h = $(" .control-pre").height();
+		var tmp_w = $(" .control-pre").width();
+		$(".control-pre").css( "margin-top",  h*( -0.5) - tmp_h*0.5 );
+		$(".control-next").css( "margin-top",  h*( -0.5) - tmp_h*0.5 );
+		$(".control-next").css( "margin-left",  w - tmp_w);
 	})
 	$(".slider .page").css("width",w);
 	$(".slider .page").css("height",h);
 	$(".slider img").css("width",w);
 	$(".slider img").css("height",h);
-	
-	$(".next").click(function(){
+
+	$(".kkbox .next").click(function(){
 	//		var w = $(window).width();
 			var num = $(".slider").children().length - 1;
 			var curr_len = $(".slider").css("margin-left").length;
@@ -27,7 +48,7 @@ function loadSlider( w, h){
 			$(".slider").animate( obj);
 	})
 
-	$(".pre").click(function(){
+	$(".kkbox .pre").click(function(){
 //			var w = $(window).width();
 			var num = $(".slider").children().length - 1;
 			var curr_len = $(".slider").css("margin-left").length;
