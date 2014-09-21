@@ -15,7 +15,10 @@
 }
 .control-pre, .control-next{
 	cursor:pointer;
-	position: absolute;
+	position: relative;
+	width:49px;
+	height:61px;
+	float:left;
 }
 
 body{
