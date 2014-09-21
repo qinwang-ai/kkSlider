@@ -11,7 +11,11 @@ How to Use this Plugin:<br>
 	(Hint:you can find an example to open the index.html
 		w:width, h:height, t:time
 		Broswer > IE5.5
-		)
+	)
+		$(function(){
+                loadSlider( 1000, 500 ,2000);  //w,h,t
+        })
+
 
 
 
