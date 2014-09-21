@@ -16,7 +16,7 @@ function loadkkcontrol(){
 	$(".kkbox").append(div);
 }
 
-function loadSlider( w, h){
+function loadSlider( w, h, t){
 //			var w = $( window).width();
 //			var h = $( window).height();
 	$(".kkbox").css( "width", w);
@@ -61,4 +61,7 @@ function loadSlider( w, h){
 			obj.marginLeft = move+"px";
 			$(".slider").animate( obj);
 	})
+	setInterval( "$('.kkbox .next').click()", t);
 }
+
+
