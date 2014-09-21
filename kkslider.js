@@ -61,7 +61,13 @@ function loadSlider( w, h, t){
 			obj.marginLeft = move+"px";
 			$(".slider").animate( obj);
 	})
-	setInterval( "$('.kkbox .next').click()", t);
+	var mark_ii = setInterval( "$('.kkbox .next').click()", t);
+	$(".kkbox").mouseover(function(){
+		clearInterval(mark_ii); 	
+	})	
+	$(".kkbox").mouseleave(function(){
+		mark_ii = setInterval( "$('.kkbox .next').click()", t);
+	})
 }
 
 
